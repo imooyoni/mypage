@@ -1,101 +1,165 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
-             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
-        <meta charset=“UTF-8” />
-        <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
-        <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
-        <meta property=“og:title” content=“요니의 링크 모음!” />
-        <meta property=“og:description” content=“요니의 프로필 페이지 보기!” />
-        <meta property=“og:image” content=“url('프로필.jpg')” />
-        <title>요니의 프로필 링크 모음!</title>
-        <style>
-            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-          * {
-              font-family: "Pretendard",serif;
-          }
-
-          body {
-              background-color: #44398A;
-          }
-          .profile {
-              width: 100px;
-              height: 100px;
-
-              border-radius: 100%;
-
-              border : 2px solid white;
-
-              background-image: url('프로필.jpg');
-              background-position: 0%;
-              background-size: cover;
-          }
-
-          .main{
-              color: white;
-              font-size: 20px;
-
-              margin-top: 30px;
-              margin-bottom: 10px;
-          }
-
-          .sub{
-              color: white;
-              font-size: 14px;
-
-              margin-top: 0px;
-              margin-bottom: 30px;
-          }
-
-          .wrap{
-              width: 300px;
-              margin: 30px auto 0px auto;
-
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-          }
-
-          .wrap > a {
-              width:300px;
-              height: 50px;
-              
-              background-color: white;
-              border-radius: 8px;
-
-              margin-bottom: 8px;
-
-              font-size: 14px;
-              font-weight: bold;
-              color: #44398A;
-              
-              
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-
-              text-decoration: none;
-
-              box-shadow: 3px 3px 5px 0px black;
-          }
-
-          .wrap > a:hover {
-              background-color: #f2f2f2;
-          }
-        </style>
-    </head>
-    <body>
-        <div class="wrap">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="FS 임우연">
+    <meta property="og:description" content="주니어 풀스텍 웹개발자 임우연입니다.">
+    <meta property="og:image" content="url('프로필.jpg')">
+    <title>PM 김르탄</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+        body {
+            background-color:#3C3D47;
+        }
+        .pro {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        .profile {
+            width: 58px;
+            height: 58px;
+            border-radius: 100%;
+            border: 1.5px solid white;
+            background-image: url('프로필.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .headcopy {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 260px;
+        }
+        .main {
+            color : #FFFFFF;
+            font-size: 27px;
+            size : 20px;
+            font-weight: 800;
+            margin: 0%;
+        }
+        .sub {
+            color : #B1B1B5;
+            font-size: 14px;
+            font-weight: 400;
+            size : 14px;
+            margin-top: 10px;
+        }
+        .minis {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 7px;
+            margin-bottom: 68px;
+        }
+        .minis > a {
+            width: 102px;
+            height: 48px;
+            border-radius: 32px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            white-space:pre-wrap;
+        }
+        .notion {
+            background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #F7F6F3;
+            color:#84827D;
+        }
+        .brunch {
+            background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #02C3BD;
+            color:#FFFFFF;
+        }
+        .facebook {
+            background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #4167B3;
+            color:#FFFFFF;
+        }
+        .wrap {
+            width: 320px;
+            margin: 30px auto 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bigs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 10px;
+        }
+        .bigs > a {
+            width: 123px;
+            background-color: white;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-decoration: none;
+            padding: 20px 16px 16px 16px;
+            border-radius: 8px;
+        }
+        .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #222222;
+            margin-bottom: 45px;
+        }
+        .desc {
+            font-size: 12px;
+            font-weight: 500;
+            color: #555555;
+            margin-bottom: 24px;
+        }
+        .btn {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #26C50C;
+            border-radius: 4px;
+            padding: 5px 4px 5px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="pro">
+            <div class="headcopy">
+                <h1 class="main">풀스텍 신입 웹개발자<br>임우연 입니다.</h1>
+                <p class="sub">사용언어 : JAVA, HTML, CSS, JAVASCRIPT<br>개발환경: SPRING TOOL SUITE 3<br>데이터베이스: ORACLE</p>
+            </div>
             <div class="profile"></div>
-            <h1 class="main">요니</h1>
-            <p class="sub">우연한 만남이 인연이 되기를 바라는<br>신입 풀스텍 웹개발자 요니입니다.</p>
-            <a target="_blank" href="https://github.com/Fiadh-L/">깃허브</a>
-            <a target="_blank" href="https://blog.naver.com/yeonnie1993/">블로그</a>
-            <a target="_blank" href="https://www.instagram.com/yeonnie1993/">인스타그램</a>
-            <a target="_blank" href="mailto:yeonnie1993@naver.com">메일</a>
         </div>
-    </body>
+        <div class="minis">
+            <a class="notion" href="javascript:alert('연결 중 입니다.');">노션             <span style="color:#FFFFFF">></span></a>
+            <a class="brunch" href="javascript:alert('연결 중 입니다.');">블로그         ></a>
+            <a class="facebook" href="javascript:alert('연결 중 입니다.');">인스타그램       ></a>
+        </div>
+        <div style="color:#FFFFFF;width: 320px;font-size: 14px;margin-bottom: 8px;">저를 소개합니다.</div>
+        <div class="bigs">
+            <a href="javascript:alert('연결 중 입니다.');">
+                <div class="name">이력서</div>
+                <div class="desc">경력 1년 미만의<br>신입 풀스텍 웹 개발자입니다.</div>
+                <div class="btn">다운로드</div>
+            </a>
+            <a href="javascript:alert('연결 중 입니다.');">
+                <div class="name">포트폴리오</div>
+                <div class="desc">애자일하게 일하며<br>성과를 냈었던 경험을<br>담았습니다.</div>
+                <div class="btn">다운로드</div>
+            </a>
+        </div>
+        <div style="color:#B1B1B5;font-size: 14px;background-position: center;background-size: cover;position: absolute;bottom: 50px;">@limwooyeon</div>
+    </div>
+</body>
 </html>
