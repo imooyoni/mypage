@@ -3,7 +3,7 @@
     font-family: "Pretendard",serif;
 }
 body {
-    background-color:white;
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
 }
 .pro {
     display: flex;
@@ -15,8 +15,8 @@ body {
     width: 58px;
     height: 58px;
     border-radius: 100%;
-    border: 1.5px solid white;
-    background-image: url('프로필.jpg');
+    border: 1.5px solid tomato;
+    background-image: url('profile.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -27,16 +27,16 @@ body {
     width: 260px;
 }
 .main {
-    color : #FFFFFF;
+    color : tomato;
     font-size: 27px;
     size : 20px;
     font-weight: 800;
     margin: 0%;
 }
 .sub {
-    color : #B1B1B5;
+    color : #B17E4B;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     size : 14px;
     margin-top: 10px;
 }
@@ -60,16 +60,16 @@ body {
     font-size: 12px;
     white-space:pre-wrap;
 }
-.notion {
-    background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #F7F6F3;
-    color:#84827D;
+.bucketlist {
+    background: linear-gradient(287.96deg, #fb9578 15.1%, #fbdbc3 83.32%), #ffd8c2;
+    color:#ca2d0b;
 }
-.brunch {
-    background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #02C3BD;
+.notion {
+    background: linear-gradient(287.96deg, #f95f40 15.1%, #fb9578 83.32%), #fb9578;
     color:#FFFFFF;
 }
-.facebook {
-    background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #4167B3;
+.blog {
+    background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, #f95f40 83.32%), #f95f40;
     color:#FFFFFF;
 }
 .wrap {
@@ -91,6 +91,7 @@ body {
 .bigs > a {
     width: 123px;
     background-color: white;
+    border: 1.5px solid tomato;
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
@@ -115,7 +116,7 @@ body {
     font-size: 12px;
     font-weight: 700;
     color: #ffffff;
-    background-color: #26C50C;
+    background-color: #2D0001;
     border-radius: 4px;
     padding: 5px 4px 5px 4px;
 }
